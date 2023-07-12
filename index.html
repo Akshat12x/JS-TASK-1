@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS task 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="body"></div>
+  <h2>A simple basic web form where you can display your name .<br>The second part of this is a mini calculator where you can calculate some easy numbers .<br> The third one is a mini calendar which will show you date and day .</h2>
+<hr>
+    <section class="container1"><h1><u>Display your Name</u></h1>
+        <h1>Enter your name:</h1>
+        <input type="text" id="nameInput">
+        <button onclick="showName()">Display Name</button>
+      
+        <h2>Your Name:</h2>
+        <div id="displayName" class="name"></div>
+    </section>
+
+<hr>
+      <section class="container2"><h1><u>Mini Calculator</u></h1>
+        <h2>Calculator</h2>
+        <div class="form-group">
+          <label for="num1">Number 1:</label>
+          <input type="number" id="num1"><br><br>
+          <label for="num2">Number 2:</label>
+          <input type="number" id="num2"><br><br>
+        <button onclick="calculate()">Calculate</button>
+        <div class="result">
+          <p>Addition: <span id="addition"></span></p>
+          <p>Subtraction: <span id="subtraction"></span></p>
+          <p>Multiplication: <span id="multiplication"></span></p>
+          <p>Division: <span id="division"></span></p>
+        </div>
+      </section>
+<hr>
+      <section id="container3">
+        <span id="date"></span>
+        <br>
+        <span id="day"></span>
+      </section>
+      
+    <script src="javascript.js"></script>
+</body>
+</html>
